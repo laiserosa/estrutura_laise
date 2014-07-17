@@ -1,0 +1,34 @@
+=====================SISTEMA DE SUPERMERCADO======================
+
+
+*As prioridades estabelecidas são respeitadas neste programa.
+
+1-O programa abre no menu, em que é possível fazer o cadastro do processo.
+Lá consta como campos: 
+nome do cliente;
+endereço do cliente;
+identidade do cliente;
+telefone do cliente; 
+valor do cheque
+data do cheque; 
+nome do supermercado que o cliente passou o cheque
+
+*Cada processo tem seu próprio identificador.
+
+*Ao realizar o cadastro, será exibida a mensagem confirmando que foi inserido com sucesso.
+
+2-Permite colocar os processos por prioridade do supermercado que necessite de mais dinheiro. Só acessar o menu digitando "3" e depois "1".
+
+*Poderá imprimir todos os processos para conferência tanto pela opção do menu inicial "2", quanto na opção "4" de Relatórios.
+
+3-Exibe relatórios por: 
+identificadores dos processos; 
+nomes dos clientes; 
+valores dos cheques que estão na pilha; 
+
+Também pode-se saber por outros dados:
+qual é o identificador do processo, 
+qual nome do cliente, 
+qual valor do cheque do processo que está no início e qual está no final.
+
+
