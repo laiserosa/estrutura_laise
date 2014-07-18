@@ -1,34 +1,34 @@
-=====================SISTEMA DE SUPERMERCADO======================
+====================================================SISTEMA DE SUPERMERCADO==================================================
 
 
-*As prioridades estabelecidas são respeitadas neste programa.
+*As prioridades estabelecidas sï¿½o respeitadas neste programa.
 
-1-O programa abre no menu, em que é possível fazer o cadastro do processo.
-Lá consta como campos: 
+1-O programa abre no menu, em que ï¿½ possï¿½vel fazer o cadastro do processo.
+Lï¿½ consta como campos: 
 nome do cliente;
-endereço do cliente;
+endereï¿½o do cliente;
 identidade do cliente;
 telefone do cliente; 
 valor do cheque
 data do cheque; 
 nome do supermercado que o cliente passou o cheque
 
-*Cada processo tem seu próprio identificador.
+*Cada processo tem seu prï¿½prio identificador.
 
-*Ao realizar o cadastro, será exibida a mensagem confirmando que foi inserido com sucesso.
+*Ao realizar o cadastro, serï¿½ exibida a mensagem confirmando que foi inserido com sucesso.
 
-2-Permite colocar os processos por prioridade do supermercado que necessite de mais dinheiro. Só acessar o menu digitando "3" e depois "1".
+2-Permite colocar os processos por prioridade do supermercado que necessite de mais dinheiro. Sï¿½ acessar o menu digitando "3" e depois "1".
 
-*Poderá imprimir todos os processos para conferência tanto pela opção do menu inicial "2", quanto na opção "4" de Relatórios.
+*Poderï¿½ imprimir todos os processos para conferï¿½ncia tanto pela opï¿½ï¿½o do menu inicial "2", quanto na opï¿½ï¿½o "4" de Relatï¿½rios.
 
-3-Exibe relatórios por: 
+3-Exibe relatï¿½rios por: 
 identificadores dos processos; 
 nomes dos clientes; 
-valores dos cheques que estão na pilha; 
+valores dos cheques que estï¿½o na pilha; 
 
-Também pode-se saber por outros dados:
-qual é o identificador do processo, 
+Tambï¿½m pode-se saber por outros dados:
+qual ï¿½ o identificador do processo, 
 qual nome do cliente, 
-qual valor do cheque do processo que está no início e qual está no final.
+qual valor do cheque do processo que estï¿½ no inï¿½cio e qual estï¿½ no final.
 
 
