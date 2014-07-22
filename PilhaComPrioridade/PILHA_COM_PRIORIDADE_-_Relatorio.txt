@@ -1,4 +1,4 @@
-PILHA COM PRIORIDADE
+﻿PILHA COM PRIORIDADE
 por Laise Santa Rosa
 
 Universidade Federal da Bahia
@@ -113,7 +113,7 @@ DESCRIÇÃO DO ALGORITMO
 
 CONCLUSÃO
 
-	Este algoritmo atende bem as solicitações que o chefe apresentou para auxiliá-lo, assim como há um LEIA-ME. Todas as informações estão no supositório do Github: 
+	Este algoritmo atende bem as solicitações que o chefe apresentou para auxiliá-lo, assim como há um LEIA-ME. Todas as informações estão no repositório do Github: 
 
 https://github.com/laiserosa/estrutura_matd04
 
