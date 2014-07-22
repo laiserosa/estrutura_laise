@@ -128,7 +128,7 @@ int main(){
 	           	   		case 0:
 					   break;
 			           default:
-					    printf("Opcao invalida");
+					    printf("\nOpcao invalida");
 			           break;
            	   		}
            	   }while(opChefe != 0);
@@ -157,7 +157,7 @@ int main(){
            				case 2:
            						tempo_inicial = clock();//tempo inicial
            					if(!underflow(&pil)){
-           						printf("\n Nomes dos clientes dos processos:\n");
+           						printf("\nNomes dos clientes dos processos:\n");
            	   					relatorio(&pil, 2);//2- para nomes dos processos
            	   				}
            	   				else{
@@ -173,7 +173,7 @@ int main(){
            				case 3:
            						tempo_inicial = clock();//tempo inicial
            					if(!underflow(&pil)){
-           						printf("\n Valores dos cheques que estão na pilha\n");
+           						printf("\nValores dos cheques que estão na pilha\n");
            	   					relatorio(&pil, 3);
            	   				}
            	   				else{
@@ -288,7 +288,7 @@ int main(){
            			   	case 0:
 					   	break;
 			           	default:
-					    	printf("Opcao invalida");
+					    	printf("\nOpcao invalida");
 			           	break;
            			}
            		}while(opRelatorio != 0);
@@ -296,7 +296,7 @@ int main(){
            case 0:
 		   break;
            default:
-		    printf("Opcao %d invalida",opc);
+		    printf("\nOpcao %d invalida",opc);
            break;
 
        }
@@ -312,7 +312,7 @@ int menu(){/*MENU QUE IRÁ RETORNAR A OPÇÃO ESCOLHIDA*/
 
     int opc;
     system("cls");
-    printf("=================SISTEMA DE CHEQUES SEM FUNDOS DOS SUPERMERCADOS===============\n\n"
+    printf("==============================SISTEMA DOS SUPERMERCADOS=========================\n\n"
            "1-Novo cadastro\n"
            "2-Imprimir cadastros\n"
            "3-Chefia\n"
@@ -349,7 +349,7 @@ int menuRelatorio(){
            "7-Listar as caracteristicas do topo\n"
            "8-Listar as caracteristicas do base\n"
            "9-Remover um processo com ID\n"
-           "0-Sair\n");
+           "0-Voltar\n");
     scanf("%d", &opc);
     return opc;
 
@@ -361,8 +361,8 @@ int underflow(PILHA *p){//verifica se esta vazia, como a pilha foi iniciada em -
     return p->topo == -1;
 }
 void push(PILHA *p, CLIENTE *cli){/*INSERÇÃO NA PILHA*/
-     p->topo++;/*INCREMENTANDO O NUMERO DO TOPO*/
-     p->cli[p->topo] = *cli;/*ADICIONA ESTRUTURA CLIENTE NA PILHA*/
+     p->topo++;/*incrementando a estrutura no topo*/
+     p->cli[p->topo] = *cli;/*adiciona estrutura cliente na pilha*/
 
 
 }
@@ -381,7 +381,7 @@ void pushPrioridade(PILHA *p, PILHA *temp ,CLIENTE *cli){/*INSERÇÃO DA PRIORIDAD
 		cont++;
 		if(cont <= contPrioridade){
 
-			push(temp, &p->cli[i]);  /*TODOS OS ELEMENTOS EM UMA TEMPORÁRIA*/
+			push(temp, &p->cli[i]);  /*todos os elementos vão para uma pilha temporária*/
 
 			removerEscolhido(p, &pt, i);/*REMOVE OS ELEMENTOS DA PILHA PRINCIPAL*/
 		}
@@ -389,7 +389,7 @@ void pushPrioridade(PILHA *p, PILHA *temp ,CLIENTE *cli){/*INSERÇÃO DA PRIORIDAD
 
 	/*ADICIONA NOVO ELEMENTO CADASTRADO*/
 	p->topo++;
-    p->cli[p->topo] = *cli;/*ADICIONA STRUCT CLIENTE NA PILHA*/
+    p->cli[p->topo] = *cli;/*adiciona struct cliente na pilha*/
     iniciarPilha(&pt);
 	OrganizarPIlhaPrioridadeValor(p, &pt);/*ORGANIZA A PILHA PELA ORDEM DE CHEQUE DE VALOR MAIS ALTO*/
 	/*PRIORIDADE VOLTA PARA O TOPO*/
@@ -406,7 +406,7 @@ void pushPrioridade(PILHA *p, PILHA *temp ,CLIENTE *cli){/*INSERÇÃO DA PRIORIDAD
 }
 
 
-CLIENTE pop(PILHA *p){/*REMOVE UM CLIENTE DA PILHA*/
+CLIENTE pop(PILHA *p){/*REMOVE O CADASTRO DO TOPO DA PILHA*/
     CLIENTE c;
 	c = p->cli[p->topo];//c recebe o elemento do topo e retorna c
 	p->topo--;
@@ -563,7 +563,7 @@ void removerCasoResolvido(PILHA *p, int processo){/*VERIFICA O CASO RESOLVIDO E 
 		printf("\nNao existe este processo");
 	}
 }
-void relatorio(PILHA *p, int op){/*FUNÇÃO PARA O RELATÓRIO*/
+void relatorio(PILHA *p, int op){/*FUNÇÃO PARA AS OPERAÇÃOES ESCOLHIDAS NO RELATÓRIO*/
 	int i, id, aux = 0;
 	float valorTotal = 0;
 
