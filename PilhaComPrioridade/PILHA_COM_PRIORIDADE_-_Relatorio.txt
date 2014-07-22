@@ -1,27 +1,6 @@
-﻿
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 PILHA COM PRIORIDADE
-
 por Laise Santa Rosa
+
 Universidade Federal da Bahia
 Disciplina: Estrutura de Dados
 Discente: Laise Silva Santa Rosa 
@@ -32,28 +11,9 @@ Curso: Sistemas de Informação
 
 PILHA COM PRIORIDADE
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Salvador, 17 de Julho de 2014
+
+
 INTRODUÇÃO
 
 Este é um algoritmo para o projeto final da disciplina de Estrutura de Dados, em C, sendo monitorado por Danilo dos Santos. 
@@ -140,6 +100,7 @@ int menuRelatorio();
 
 /*FUNÇÃO PARA AS OPERAÇÃOES ESCOLHIDAS NO RELATÓRIO*/
 void relatorio(PILHA *, int op);
+
 
 
 DESCRIÇÃO DO ALGORITMO
