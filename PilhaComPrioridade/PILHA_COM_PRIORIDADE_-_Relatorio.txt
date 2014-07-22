@@ -1,0 +1,159 @@
+﻿
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PILHA COM PRIORIDADE
+
+por Laise Santa Rosa
+Universidade Federal da Bahia
+Disciplina: Estrutura de Dados
+Discente: Laise Silva Santa Rosa 
+Docente: Danilo Silva dos Santos 
+Curso: Sistemas de Informação 
+
+
+
+PILHA COM PRIORIDADE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Salvador, 17 de Julho de 2014
+INTRODUÇÃO
+
+Este é um algoritmo para o projeto final da disciplina de Estrutura de Dados, em C, sendo monitorado por Danilo dos Santos. 
+Consiste em auxiliar  um dono de uma grande rede de supermercados na tomada de decisão, armazenando os dados dos clientes, bem como as prioridades. Exibe relatórios para melhor busca e visualização dos cadastros.
+DESCRIÇÃO DA ESTRUTURA DE DADOS
+
+A estrutura do cadastro foi feita da seguinte maneira:
+
+/*ESTRUTURA DO CADASTRO*/
+typedef struct{
+        char nome[50], endereco[60], nomeMercado[30], dataCheque[12];
+        int id, identidade, telefoneCliente;
+        float valor;
+}CLIENTE;
+
+/*ESTRUTURA DA PILHA DE CADASTRO*/
+typedef struct{
+        int topo;
+        CLIENTE cli[T];
+}PILHA;
+
+A estrutura especificada para lidar com a armazenagem, bem como a organização, é uma pilha e que se tenha uma prioridade de acordo com a decisão do chefe da grande rede de supermercados, bem como prioridade nos valores dos cheques.
+
+Funções utilizadas na pilha:
+
+/*INICIALIZA A PILHA*/
+void iniciarPilha(PILHA *);
+
+/*VERIFICA SE A PILHA ESTÁ CHEIA*/
+int overflow(PILHA *);
+
+/*VERIFICA SE A PILHA ESTÁ VAZIA*/
+int underflow(PILHA *);
+
+/*INSERE NA PILHA*/
+void push(PILHA *, CLIENTE *);
+
+/*INSERE QUANDO TEM PRIORIDADES*/
+void pushPrioridade(PILHA *, PILHA * ,CLIENTE *);
+
+Funções utilizadas para organizar a pilha:
+
+/*ORGANIZA A PILHA PELA PRIORIDADE DO VALOR DO CHEQUE*/
+void OrganizarPIlhaPrioridadeValor(PILHA *, PILHA *);
+
+/*ORGANIZA PRIORIDADE QUE O CHEFE DETERMINA PARA O MERCADO*/
+void OrganizarPIlhaPrioridadeMercado(PILHA *, PILHA *);
+
+/*PROCESSO DE ORGANIZAR EM ORDEM DECRESCENTE PELO MERCADO*/
+void OrganizarDecrescente(PILHA *, PILHA *);
+
+Funções utilizadas para imprimir:
+
+/*IMPRIME UM SÓ ELEMENTO*/
+void imprimirPilhaSimplificada(PILHA *);
+
+/*IMPRIME POR BUSCA ESCOLHIDA // POR ID, POR BASE, POR TOPO*/
+void imprimirPilhaEscolhido(PILHA *, int id);
+
+/*IMPRIME A PILHA INTEIRA COM TODOS OS ELEMENTOS*/
+void imprimirPilha(PILHA *);
+
+Funções utilizadas para remover:
+
+/*REMOVE O CADASTRO DO TOPO DA PILHA*/
+CLIENTE pop(PILHA *);
+
+/*REMOVE UM ELEMENTO DA PILHA ESCOLHIDO*/
+void removerEscolhido(PILHA *, PILHA *, int esc);
+
+/*REMOVE CASO RESOLVIDO PELO CHEFE*/
+void removerCasoResolvido(PILHA *, int processo);
+
+Funções dos menus:
+
+/*MOSTRA MENU PRINCIPAL*/
+int menu();
+
+/*MENU DO CHEFE*/
+int menuChefe();
+
+/*MENU DO RELATORIO*/
+int menuRelatorio();
+
+/*FUNÇÃO PARA AS OPERAÇÃOES ESCOLHIDAS NO RELATÓRIO*/
+void relatorio(PILHA *, int op);
+
+
+DESCRIÇÃO DO ALGORITMO
+
+	A estrutura de dados utilizada foi uma pilha. Foi preciso fazer três pilhas: a principal, e duas temporárias, para melhor organização das prioridades especificadas. Caso o chefe tenha escolhido uma prioridade, a opção deverá estar acima de todos os já organizados por valor do cheque. 
+	Realiza o cadastro, com campos de nome, endereço, identidade, e telefone do cliente; valor e data do cheque; e o nome do supermercado que o cliente passou o cheque. Sendo que cada processo tem seu próprio identificador.
+	Exibe relatórios de acordo com tais solicitações: identificadores dos processos; nomes dos clientes; valores dos cheques que estão na pilha; qual é o identificador do processo, qual nome do cliente, qual valor do cheque do processo do topo e base.
+
+
+
+CONCLUSÃO
+
+	Este algoritmo atende bem as solicitações que o chefe apresentou para auxiliá-lo, assim como há um LEIA-ME. Todas as informações estão no supositório do Github: 
+
+https://github.com/laiserosa/estrutura_matd04
+
+  
