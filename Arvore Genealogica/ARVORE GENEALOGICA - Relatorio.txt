@@ -1,149 +1,60 @@
-﻿
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ÁRVORE GENEALÓGICA
-
-
 por Laise Santa Rosa
 
 
 Universidade Federal da Bahia
-
 Disciplina: Estrutura de Dados
-
 Discente: Laise Silva Santa Rosa 
-
 Docente: Danilo Silva dos Santos 
-
 Curso: Sistemas de Informação 
-
-
-
 
 
 ÁRVORE GENEALÓGICA
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Salvador, 31 de Julho de 2014
-
-
-
 INTRODUÇÃO
 
-
 Este é um algoritmo para o projeto final da disciplina de Estrutura de Dados, em C, sendo monitorado por Danilo dos Santos. 
-
 
 
 DESCRIÇÃO DA ESTRUTURA DE DADOS
 	
 Foi utilizada uma árvore n-ária com quatro nós.
 
-
-
 A estrutura
 
-
 typedef struct Arvore{
-        
 char nome[31];
-        
 char sexo;
-        
 struct Arvore *parents;  (representa o pai ou mãe)
-        
 struct Arvore *brot;	 (representa os irmãos)
-        
 struct Arvore *son;	 (representa os filhos)
-        
 struct Arvore *conjuge;  (representa o cônjuge)
 }
 Arv;
 
-
-
 Funções utilizadas na árvore:
 
-
-
 struct Arvore * AddMembro(Arv *Membro);
-
 Adiciona a struct Arv na árvore.
 
-
-
 struct Arvore * pos_ordem(Arv *Membro, char *buscaNome);
-
 É responsável pela busca na árvore.
 
-
-
 int relacaoParentesco();
-
 Capta a opção de parentesco de quem está cadastrando. Pergunta se quer inserir cônjuge, filhos ou irmãos para depois fazer a busca e inserir.
-
-
-
-
-
 
 
 DESCRIÇÃO DO ALGORITMO
 
-	
 A estrutura de dados utilizada foi uma árvore. 
 Foi pensado em fazer com que qualquer um dos dois cônjuges se tornassem a raiz, ou seja, que tivesse ligada aos filhos (por isso o ponteiro “*parents” – pais).
-	
 A função de busca não foi efetivamente feita, então não foi possível completar o código.
-	
 Não consegui fazer a árvore, pois não tive conteúdo suficiente e nem tempo hábil, mesmo pesquisando muito. Tentei até o último momento, o que pude fazer eu fiz.
-	
-
 
 
 CONCLUSÃO
 
-	
 Repositório no Github: https://github.com/laiserosa/estrutura_matd04
 
   
